@@ -26,7 +26,7 @@
 using namespace std;
 
 // Constants
-const int n = 11;
+const int n = 10;
 
 // Main Function
 int main () {
@@ -41,12 +41,18 @@ int main () {
 	cin >> b;              // Get input from user
 
 	// Prints formatted table in console
-	cout << "|    Number 1 |    Number 2 |         Sum |     Product |" << endl;
-	cout << "| " << setw(n) << a << " | " << setw(n) << b << " | " << setw(n) << (a+b) << " | " << setw(n) << (a*b) << " |" << endl;
+	cout << "|" << setw(n) << "Number 1"
+		<< " |" << setw(n) << "Number 2"
+		<< " |" << setw(n) << "Sum"
+		<< " |" << setw(n) << "Product" << " |" << endl;
+	cout << "|" << setw(n) << a
+		<< " |" << setw(n) << b
+		<< " |" << setw(n) << (a+b)
+		<< " |" << setw(n) << (a*b) << " |" << endl;
 
-	/* Example of table with number at max lenght int
-	|    Number 1 |    Number 2 |         Sum |     Product |
-	|    12341234 |         231 |    12341465 | -1444142242 |
+	/* Example of table with number
+	|  Number 1 |  Number 2 |       Sum |   Product |
+	|  12341234 |        21 |  12341255 | 259165914 |
 	*/
 
 	// Return no error
