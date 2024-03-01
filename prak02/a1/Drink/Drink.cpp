@@ -38,7 +38,7 @@ Drink::Drink(std::string drinkName, double mlVolume, double alcoholPercentage) {
 void Drink::showInfo() {
 	std::cout << Drink::mlVolume << " ml "
 			<< Drink::name
-			<< "(alcohol: " << (Drink::alcoholPercentage * 100) << " vol%)" << std::endl;
+			<< " (alcohol: " << (Drink::alcoholPercentage * 100) << " vol%)" << std::endl;
 }
 
 // Method that mixes two drinks together
