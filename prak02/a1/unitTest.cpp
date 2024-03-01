@@ -17,6 +17,7 @@
 //-------------------------------------------------------
 
 // Application Include
+#include <iostream>
 #include "Drink/Drink.h"
 
 // Test unit main code
@@ -27,6 +28,7 @@ int main() {
 	Drink d3 = Drink("Lemon juice", 20.0, 0.0);
 
 	// Show the initial state with show info method
+	std::cout << "Before mixing:" << std::endl;
 	d1.showInfo();
 	d2.showInfo();
 	d3.showInfo();
@@ -38,6 +40,7 @@ int main() {
 	d1.mix("Cuba Libre (Coke with Rum and Lemon juice)", &d3);
 
 	// Print the end result using show info
+	std::cout << "After mixing:" << std::endl;
 	d1.showInfo();
 	d2.showInfo();
 	d3.showInfo();
