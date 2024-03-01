@@ -31,7 +31,7 @@ Drink::Drink() {
 Drink::Drink(std::string drinkName, double mlVolume, double alcoholPercentage) {
 	Drink::name = drinkName;
 	Drink::mlVolume = mlVolume;
-	Drink::alcoholPercentage = alcoholPercentage;
+	Drink::alcoholPercentage = (alcoholPercentage / 100);
 }
 
 // Method that prints info about the drink to console
