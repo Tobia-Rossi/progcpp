@@ -36,7 +36,7 @@ Drink::Drink(std::string drinkName, double mlVolume, double alcoholPercentage) {
 
 // Method that prints info about the drink to console
 void Drink::showInfo() {
-	std::cout << Drink::mlVolume << " ml"
+	std::cout << Drink::mlVolume << " ml "
 			<< Drink::name
 			<< "(alcohol: " << (Drink::alcoholPercentage * 100) << " vol%)" << std::endl;
 }
